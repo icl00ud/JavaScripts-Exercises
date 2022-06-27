@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <div class="box">
+        <div class="overlay"></div>
+        <div class="title-ex8">
+            <h3>&lt; Faça um formulário contendo campos do tipo text, radio, checkbox e selects.
+                Use botões para enviar o formulário via email e botões para mudar a cor de fundo da sua página,
+                Use CSS e seja criativo na apresentação da página /&gt;
+            </h3>
+        </div><!--title-ex8-->
+    </div><!--box-->
+
+    <div class="box-form-button">
+        <div class="form">
+            <h2 class="title-form">Formulário</h2>
+            <form action="mailto:israelschroederm@gmail.com" name="ex8" method="post" id="form.ex8">
+
+                <div class="input-texto espaco">
+                    <label>Texto</label><br>
+                    <input type="text" name="texto" placeholder="Alguma coisa...">
+                </div><!--input-texto-->
+
+                <div class="input-radio espaco">
+                    <div class="radio1">
+                        <label>HTML</label><br>
+                        <input type="radio" name="fav_language" value="HTML">
+                    </div><!--radio1-->
+                    <div class="radio2">
+                        <label>CSS</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                    </div><!--radio2-->
+                    <div class="radio3">
+                        <label>JavaScript</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    </div><!--radio3-->
+                </div><!--input-radio-->   
+
+                <div class="input-checkbox espaco">
+                    <label>Checkbox</label><br>
+                    <input type="checkbox" name="checkbox">
+                </div><!--input-checkbox-->
+
+                <div class="select espaco">
+                    <label>Select</label><br>
+                    <select name="select">
+                        <option value="1">Ferramentas Web e UX</option>
+                        <option value="2">Sistema Operacional</option>
+                        <option value="3">Soft Skill</option>
+                    </select><br>
+                </div><!--select-->
+                <div class="input-submit">
+                    <input type="submit" name="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div><!--box-form-button-->
+    <div class="box-btn">
+        <div class="btn-flex">
+            <div class="title">
+                <h1>Troque a cor do background</h1>
+            </div><!--title-->
+            <div class="btn">
+                <button type="button" onclick="mudarCorBG()">;)</button><br>
+                <button type="button" onclick="whiteBG()">;D</button>
+            </div><!--btn-->
+        </div><!--btn-flex-->
+    </div><!--box-btn-->
+
+    
+    <footer>
+        <span>Criado com 💖 por icl00ud</span><br>
+        <a href="https://github.com/icl00ud"><i class='fa fa-github'></i></a>
+    </footer>
+</body>
+</html>

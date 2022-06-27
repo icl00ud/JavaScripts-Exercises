@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            font-size: 50px;
+            color: azure; 
+        }
+
+        form{
+            color: azure;
+            font-size: 30px;
+            padding-top: 150px;
+        }
+
+        form input{
+            margin-top: 25px;
+            font-size: 24px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Escreva um algoritmo capaz de calcular o fatorial de um número</h1>
+
+    <div class="form">
+        <form name="fatorial" method="post">
+            <label for="numero">Digite um número para calcular o seu fatorial</label><br>
+            <input type="text" name="numero" id="numero"><br>
+            <input type="submit" name="submit" value="Calcular" onclick="calcFatorial()">
+        </form>
+    </div>
+
+    <div id="resultado"></div>
+    </center>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

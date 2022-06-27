@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+
+    <style>
+        h3{
+            font-size: 30px;
+            padding: 0 500px;
+            color: azure;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        form{
+            color: azure;
+            font-size: 30px;
+            padding-top: 150px;
+        }
+
+        form input{
+            margin-top: 25px;
+            font-size: 24px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>Escreva um algoritmo para ler o número total de eleitores de um município, o número de
+            votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em
+            relação ao total de eleitores.</h3>
+
+            <div class="form">
+                <form name="ex3" method="post">
+                    <label for="numero">Numero total de eleitores</label><br>
+                    <input type="text" name="numEleitores"><br>
+
+                    <label for="numero">Numero de votos em branco</label><br>
+                    <input type="text" name="numBranco"><br>
+
+                    <label for="numero">Numero de votos nulos</label><br>
+                    <input type="text" name="numNulo"><br>
+
+                    <label for="numero">Numero de votos validos</label><br>
+                    <input type="text" name="numValidos"><br>
+
+                    <input type="submit" name="submit" value="Calcular" onclick="calcPorcentagem()">
+                </form>
+            </div>
+    </center>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

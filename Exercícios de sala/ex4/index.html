@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+
+    <style>
+        h3{
+            font-size: 30px;
+            padding: 0 500px;
+            color: azure;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        form{
+            color: azure;
+            font-size: 30px;
+            padding-top: 150px;
+        }
+
+        form input{
+            margin-top: 25px;
+            font-size: 24px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>As maçãs custam R$ 1,30 se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+            compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas,
+            calcule e escreva o custo total da compra.
+        </h3>
+
+        <div class="form">
+            <form name="macas" method="post">
+                <label for="numero">Quantas maçãs você comprou?</label><br>
+                <input type="number" name="numero"><br>
+                <input type="submit" name="submit" value="Calcular" onclick="calcTotalDaCompra()">
+            </form>
+        </div>
+    </center>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
