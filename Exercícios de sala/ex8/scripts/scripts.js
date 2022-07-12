@@ -12,3 +12,8 @@ function whiteBG(){
 	var bgColor = "rgb(" + x + "," + x + "," + x + ")";
 	document.body.style.background = bgColor;
 }
+
+function email() {
+	var optionSelect = ex8.select.value;
+	console.log(optionSelect);
+}
