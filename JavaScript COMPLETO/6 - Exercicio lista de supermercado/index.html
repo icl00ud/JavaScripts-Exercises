@@ -1,0 +1,37 @@
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <body>
+        <header>
+            <h1>App Lista de SuperMercado</h1>
+        </header>
+
+        <div class="box-lista">
+            <div class="lista-cadastro">
+                <label for="nome-produto">Nome do produto</label>
+                <input type="text" placeholder="Nome do produto..." name="nome_produto">
+                <label for="valor-produto">Valor do produto</label>
+                <input type="number" placeholder="Valor do produto..." step="0.01" name="valor_produto">
+                <input type="submit" name="acao" value="Cadastrar">
+            </div><!--lista-cadastro-->
+        </div><!--box-lista-->
+
+        <div class="lista-produtos">
+            <div class="lista-produtos-title">
+                <div style="text-align: center;" class="nome-produto w50">Produto</div>
+                <div style="text-align: center;" class="preco-produto w50">Preço</div>
+            </div><!--lista-produtos-title-->
+            <div class="produtos"></div>
+        </div><!--lista-produtos-->
+
+        <div class="soma-produto">
+            <h2>Total da compra: R$0</h2>
+        </div>
+
+        <button name="reset">Limpar o carrinho!</button>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

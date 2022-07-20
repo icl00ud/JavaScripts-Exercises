@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                method:'post',
+                body: JSON.stringify({
+                    title:'Xesquedele',
+                    body: 'Alguma coisa',
+                    userId: 2
+                }),
+                headers:{
+                    'Content-Type': 'application/json; charset=UTF-8'
+                }
+            })
+            .then(response => response.json())
+            .then(json => console.log(json));
+        </script>
+    </body>
+</html>

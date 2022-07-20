@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <style>
+            .player-options img, .enemy-options img{
+                max-width: 200px;
+                opacity: 0.3;
+                cursor: pointer;
+            }
+
+            .enemy-options img{
+                cursor: none;
+            }
+        </style>
+        <h1 style="text-align: center; border-bottom: 1px solid black; padding: 20px 0;">Pedra, papel ou tesoura.</h1>
+        <h2 style="color: red; text-align:center;" class="winner"></h2>
+        <div style="float: left;" class="player-options">
+            <div><img opt="rock" src="images/rock.png"></div>
+            <div><img opt="paper" src="images/paper.png"></div>
+            <div><img opt="scissor" src="images/scisor.png"></div>
+        </div>
+        <div style="float: right;" class="enemy-options">
+            <div><img opt="rock" src="images/rock.png"></div>
+            <div><img opt="paper" src="images/paper.png"></div>
+            <div><img opt="scissor" src="images/scisor.png"></div>
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
